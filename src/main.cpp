@@ -16,5 +16,10 @@ int main() {
     std::cout << "\nAfter removing one Horse Saddle:" << std::endl;
     inventory.displayItems();
 
+    // New feature: Get the quantity of a specific item
+    std::string itemToSearch = "Horse Feed Bag";
+    int quantity = inventory.getItemQuantity(itemToSearch);
+    std::cout << "\nQuantity of " << itemToSearch << ": " << quantity << std::endl;
+
     return 0;
 }
